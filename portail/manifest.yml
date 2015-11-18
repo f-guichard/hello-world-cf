@@ -1,12 +1,12 @@
 ---
 applications:
-- name: portail-dfy-cbhs8400
+- name: portail-dfy-<your-cuid>
   memory: 256M
   disk_quota: 256M
   instances: 2
   hosts:
-  - blue-cbhs8400-portail-dfy
-  - green-cbhs8400-portail-dfy
+  - orange-com-<your_cuid>-portail-dfy
+  - woopik-com-<your_cuid>-portail-dfy
   path: .
   buildpack: php_buildpack
   env:

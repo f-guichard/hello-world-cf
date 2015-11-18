@@ -24,12 +24,10 @@
 			</td>
 			<td>
 				<div id="cours_orange" style="margin-right=5%;">
-				<table>
+				<table><tr>
 					<th>Date</th>
 					<th>Cours</th>
 					<th>%Var</th>
-					</tr>
-					<table>
 					<?php
 						if($fileres = fopen("../data/cours_bourse_last10.txt",'r'))
 						{
@@ -53,11 +51,6 @@
 							echo '</tr>';
 						}
 					?>
-					</table>
-			</td>
-			<td>
-				<div id="cours_orange" style="margin-right=5%;">
-				<table>
 					<?php
 						$NotBindingMessage = "<br>No service binding detected : <b>no database available</b><br>Please watch logs for more details<br>";
 						$stdout = fopen('php://stdout', 'w');
@@ -87,7 +80,6 @@
 						fclose($stderr);
 						fclose($stdout);
 					?>
-				</table></td>
 				</tr></table>
 				</div>
 			</td>
@@ -96,7 +88,7 @@
  <div id="page" class="ui-widget">
    <div id="formulaire">
    <!-- html5/CSS3 in progress -->
-   <input type="text" id="searchbar" name="search" size="30" placeholder="Recherche dans la base de donnees..." />
+   <input type="text" id="searchbar" name="search" size="30" placeholder="Recherche dans la base de données..." />
 	<script type="text/javascript">
 	$(function() {
 		$("#searchbar").autocomplete({
