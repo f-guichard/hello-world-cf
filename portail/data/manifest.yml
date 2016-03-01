@@ -1,0 +1,14 @@
+---
+applications:
+- name: portail-dfy-<your-cuid>
+  memory: 256M
+  disk_quota: 2G
+  instances: 2
+  hosts:
+  - blue-<your_cuid>-portail-dfy
+  - green-<your_cuid>-portail-dfy
+  path: .
+  buildpack: php_buildpack
+  env:
+    LEVEL: formation
+    STAGE: dev
