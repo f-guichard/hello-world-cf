@@ -1,12 +1,12 @@
 ---
 applications:
-- name: portail-dfy-<your-cuid>
+- name: portail-dfy
   memory: 256M
   disk_quota: 256M
   instances: 2
   hosts:
-  - orange-com-<your_cuid>-portail-dfy
-  - woopik-com-<your_cuid>-portail-dfy
+  - orange-com-portail-dfy-<your_cuid>
+  - woopik-com-portail-dfy-<your_cuid>
   path: .
   buildpack: php_buildpack
   env:
