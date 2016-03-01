@@ -1,0 +1,14 @@
+---
+applications:
+- name: phpinfo-verbose
+  memory: 64M
+  disk_quota: 256M
+  instances: 2
+  hosts:
+  - totoberbeux
+  path: .
+  buildpack: php_buildpack
+  env:
+    BP_DEBUG: true
+    LEVEL: formation
+    STAGE: dev
