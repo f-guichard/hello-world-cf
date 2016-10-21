@@ -9,9 +9,15 @@
 	<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
 </head>
 <body>
+<<<<<<< HEAD
+	<div id="logocfydocker" align="center" style="margin-left:0%;" >
+		<img src="media/cfdocker.png" width="600" height="250" />
+	</div>
+=======
         <div id="logocfydocker" align="center" style="margin-left:0%;" >
                 <img src="media/cfdocker.png" width="600" height="250"/>
         </div>
+>>>>>>> 1ec4a58b5cbe71ba19d82a9f0534d564c8712690
 
 	<table>
 		<tr>
