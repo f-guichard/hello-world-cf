@@ -1,16 +1,12 @@
 ---
 applications:
 - name: portail-dfy-cfy-sophia-v2
-  memory: 256M
+  memory: 128M
   disk_quota: 256M
-  instances: 2
+  instances: 4
   hosts:
-<<<<<<< HEAD
   - portaildfy-sophia-v7
-=======
-  - orange-com-portail-dfy-<your_cuid>
-  - woopik-com-portail-dfy-<your_cuid>
->>>>>>> 1ec4a58b5cbe71ba19d82a9f0534d564c8712690
+#  - woopik-com-portail-dfy-<your_cuid>
   path: .
   buildpack: php_buildpack
   env:
